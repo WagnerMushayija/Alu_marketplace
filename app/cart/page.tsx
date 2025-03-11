@@ -170,7 +170,7 @@ export default function CartPage() {
               </div>
 
               <Button className="w-full mt-6" asChild>
-                <Link href="/checkout">
+                <Link href="/auth/login">
                   Proceed to Checkout
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>

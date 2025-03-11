@@ -108,10 +108,10 @@ export function Header() {
                 <span className="sr-only">Profile</span>
               </Link>
               <Button variant="outline" size="sm" asChild className="hidden md:flex">
-                <Link href="/seller/dashboard">
-                  <Store className="h-4 w-4 mr-2" />
-                  Seller Dashboard
-                </Link>
+                <Link href="/auth/login">Login</Link>
+              </Button>
+              <Button size="sm" asChild className="hidden md:flex">
+                <Link href="/auth/register">Register</Link>
               </Button>
             </>
           )}
@@ -163,6 +163,18 @@ export function Header() {
                 <Link href="/profile" className="text-lg font-medium" onClick={toggleMenu}>
                   Profile
                 </Link>
+                <div className="flex flex-col gap-2 mt-4">
+                  <Button asChild>
+                    <Link href="/auth/login" onClick={toggleMenu}>
+                      Login
+                    </Link>
+                  </Button>
+                  <Button variant="outline" asChild>
+                    <Link href="/auth/register" onClick={toggleMenu}>
+                      Register
+                    </Link>
+                  </Button>
+                </div>
                 <Button variant="outline" asChild className="mt-4">
                   <Link href="/seller/dashboard" onClick={toggleMenu}>
                     <Store className="h-4 w-4 mr-2" />

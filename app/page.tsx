@@ -26,7 +26,7 @@ export default function Home() {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link href="/seller/dashboard">
+                <Link href="/auth/register">
                   <Store className="mr-2 h-4 w-4" />
                   Sell Products
                 </Link>
